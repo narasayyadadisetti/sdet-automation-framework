@@ -9,6 +9,7 @@ pipeline {
         }
 
         stage('Verify Environment') {
+			 // Verify Java and Maven before running tests
             steps {
                 bat 'java -version'
                 bat 'mvn -version'
